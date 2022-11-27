@@ -1,0 +1,24 @@
+{
+  "name": "sample-ecommerce-project",
+  "version": "1.0.0",
+  "description": "A sample E-Commerce Project aimed at learning HTML,Tailwind CSS, JavaScript and MongoDB\r Checking remote Upstream branch",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./pages/input.css -o ./pages/css/main.css",
+    "watch": "tailwindcss -i ./pages/input.css -o ./pages/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peter-Nyarunda/Sample-Ecommerce-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peter-Nyarunda/Sample-Ecommerce-Project/issues"
+  },
+  "homepage": "https://github.com/Peter-Nyarunda/Sample-Ecommerce-Project#readme",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  }
+}
