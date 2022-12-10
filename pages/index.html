@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="css/main.css">
     <title>E-Commerce</title>
 </head>
-<body>
-    <header class="flex  flex-row justify-between">
+<body class="px-14 py-10 md:px-40 md:py-12">
+    <header class="flex justify-between">
         <!--Logo-->
-        <div>
-            <img src="/images/kaliumstore1.png" alt="Logo" >
+        <div class="flex">
+            <img src="./images/kaliumstore1.png" alt="Logo" class="w-52">
+           
         </div>
 
             <!--Large screens menu-->
         <div>
-            <ul>
+            <ul class="hidden md:flex space-x-6">
 
                 <li>
-                    <a href="/">Homepage</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400" href="/">Homepage</a>
                 </li>
                 <li>
-                    <a href="/">Shop</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400"href="/">Shop</a>
                 </li>
                 <li>
-                    <a href="/">Grid Types</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400" href="/">Grid Types</a>
                 </li>
                 <li>
-                    <a href="/">Product</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400" href="/">Product</a>
                 </li>
                 <li>
-                    <a href="/">Woo Pages</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400" href="/">Woo Pages</a>
                 </li>
                 <li>
-                    <a href="/">Buy!</a>
+                    <a class="hover:underline underline-offset-4 decoration-slate-400" href="/">Buy!</a>
                 </li>
                 <li>
                     <a href="/"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></a>
@@ -44,7 +45,37 @@
                 </li>
                 
             </ul>
-        </div>            
+
+            <div class="flex space-x-5">
+                <div class="md:hidden"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div>
+                <div class="md:hidden"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg></div>
+
+            <!--Hamburger menu-->
+                <button id="menu-btn" class="block hamburger  md:hidden focus:outline-none" onclick="myFunction()">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>         
+                </button>
+            </div>
+
+        </div>
+
+        <!--Mobile menu-->
+        
+        
+        
     </header>
+    <div class="md:hidden mobile-menu">
+            <div id="menu" class="absolute flex-col items-start hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a class="topnav" href="/">Homepage</a>
+                <a class="topnav" href="/">Shop</a>
+                <a class="topnav" href="/">Grid Types</a>
+                <a class="topnav" href="/">Product</a>
+                <a class="topnav" href="/">Woo Pages</a>
+                <a class="topnav" href="/">Buy</a>
+            </div>
+        </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
